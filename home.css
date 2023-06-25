@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cabin&family=Josefin+Sans:wght@700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+/* SIDE BAR */
+.sidebar_container {
+  position: fixed;
+  left: 0px;
+  width: 185px;
+  height: 100%;
+  background: #1a1a20;
+  transition: all .5s ease;
+}
+/* Icon Side Bar */
+.sidebar_container header {
+  font-size: 22px;
+  line-height: 70px;
+  text-align: center;
+  user-select: none;
+}
+.sidebar_container header a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.sidebar_container header a i{
+  margin-right: 10px;
+}
+
+/* Login Button */
+.button-user {
+  position: relative;
+}
+.sign-up-button {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  padding: 10px 20px;
+  background-color: #005ba5;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.sign-up-button:hover {
+  background-color: #0d74c8;
+}
+.login-button {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  padding: 10px 20px;
+  background-color: #4f5760;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.login-button:hover {
+  background-color: #647180;
+}
+
+/* Start Coding Button */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15%;
+}
+.custom-button {
+  font-weight: bold;
+  color: white;
+  padding: 12px 24px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  border: 3.5px solid white;
+  border-image: linear-gradient(to right, #ff9411, #02b902);
+  border-image-slice: 1;
+
+  background: rgb(10, 10, 10)
+}
+.custom-button:hover {
+  background: #ffffff;
+  color: black;
+  
+  border: 3.5px solid white;
+  border-image: linear-gradient(to right, #02b902, #ff9411);
+  border-image-slice: 1;
+}
+
+/* Side Bar List */
+.sidebar_container ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 45px;
+  font-size: 17px;
+  color: white;
+  padding-left: 25px;
+  box-sizing: border-box;
+  transition: .4s;
+}
+/* hover side bar list */
+ul li:hover a{
+  background-color: rgb(23, 23, 25);
+  padding-left: 50px;
+}
+/* distance logo with text */
+.sidebar_container ul a i{
+  margin-right: 16px;
+}
+
+/* CONTENT */
+.content_container {
+  margin-left: 185px; /* menyesuaikan jarak atau ruang kosong antara section dan side bar */
+}
+
+/* Fist Section */
+.first_section{
+  background: #14141a;
+}
+.introduction {
+  display: flex;
+}
+.icon_app i {
+  padding-left: 5%;
+  padding-top: 5%;
+  font-size: 5rem;
+}
+.icon_app h1 {
+  font-family: 'Josefin sans';
+  color: #ffffff;
+
+  width: 50%;
+  font-size: 3rem;
+
+  padding-left: 2%;
+  padding-top: 5%;
+}
+.icon_app p {
+  color: #ededed;
+  font-family: 'Alegreya sans';
+  font-size: 20px;
+  padding-left: 5%;
+  padding-top: 5%;
+
+  width: 450px /*membuat text lebih panjang*/
+}
+
+/* Second Section */
+.second_section{
+  height: 100vh;
+}
+.box_container {
+  width: 100%;
+  height: 100%;
+  background: #14141a;
+
+  display: flex; /*membuat element bisa berurutan secara horizontal*/
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+
+  padding-top: 50px;
+}
+.box {
+  width: 25%;
+  height: 250px;
+  
+  background: #22252f;
+  margin: 20px; /*ruang kosong yang bisa di pakai box*/
+  box-sizing: border-box;
+
+  border: 1px solid #32343b;
+  
+  border-radius: 10px;
+}
+.box h2 {
+  font-family: 'Josefin Sans';
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin: auto;
+  padding-top: 10% /*jarak antara element yang di atas*/
+}
+.box p {
+  text-align: left;
+  padding-left: 5%;
+  color: rgb(204, 204, 204);
+  font-size: 15px;
+  line-height: 1.5; /*jarak antara kata*/
+  padding-top: 10%
+}
+@media screen and (max-width:1200px) {
+  .box{
+    width: 40%;
+  }
+}
+@media screen and (max-width:600px) {
+  .box{
+    width: 40%;
+  }
+}

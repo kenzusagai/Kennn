@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Code Editor</title>
+
+    <!-- Reference -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d070a0eb8b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+      <div class="title-project">
+          <a id="website-title">Untitled</a>
+          <a href="#" id="button-title"><i class="fa-solid fa-pen" style="color: #ffffff;"></i></a>
+          <input type="text" id="edit-title" style="display: none;">
+      </div>
+      <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+        <!-- Editor -->
+        <div class="code">
+            <div class="code-input">
+                <!-- html input -->
+                <label><i class="fa-brands fa-html5" style="color: #e9420a;"></i> HTML</label>
+                <textarea id="html_code" onkeyup="compile()" placeholder="HTML" class="no-resize"></textarea>
+
+                <!-- css input -->
+                <label><i class="fa-brands fa-css3-alt" style="color: #1d55cb;"></i> CSS</label>
+                <textarea id="css_code" onkeyup="compile()" placeholder="CSS" class="no-resize"></textarea>
+
+                <!-- js input -->
+                <label><i class="fa-brands fa-js" style="color: #e4ce2e;"></i> JS</label>
+                <textarea id="js_code" onkeyup="compile()" placeholder="JavaScript" class="no-resize"></textarea>
+            </div>
+        </div>
+        <!-- Output -->
+        <div class="display">
+            <!-- menampilkan halaman dokumen html -->
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+/* registration.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:color-mix(in srgb, lightblue 50%, black 100%);
+}
+  
+  h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h2 > span {
+    font-size: fixed;
+    font-weight: 100;
+  }
+
+  form {
+    width: 250px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: 0 auto;
+    background: #ecf0f1;
+    width: 462px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 15px;
+}
+  
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  a {
+    text-align: center;
+    font-size: 13px;
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 42%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    vertical-align: top;
+    margin-top: -67px;
+  
+  }
+  
